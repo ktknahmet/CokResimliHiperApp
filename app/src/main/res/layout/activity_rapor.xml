@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".RaporActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/genelDegerlendirme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false"
+                android:text="@string/genel_degerlendirme_kotu"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dikkat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:textColor="#000000"
+                android:text="@string/dikkat_kotu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/genelDegerlendirme" />
+
+            <TextView
+                android:id="@+id/zamanlama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:textColor="#000000"
+                android:text="@string/zamanlama_kotu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dikkat" />
+
+            <TextView
+                android:id="@+id/durustluk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text="@string/durustluk_kotu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zamanlama" />
+
+            <TextView
+                android:id="@+id/hiperaktivite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text="@string/hiperaktivite_kotu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/durustluk" />
+
+            <TextView
+                android:id="@+id/dikkatPerformans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dikkat_performans_kotu"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dikkatPerformansDetay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/dikkat_performans_detay_kotu"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/dikkatPerformans" />
+
+            <TextView
+                android:id="@+id/zamanlamaPerformans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="107dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/zamanlama_performans_kotu"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dikkatPersormansDetay" />
+
+            <TextView
+                android:id="@+id/zamanlamaPerformansDetay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/zamanlama_performans_detay_kotu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/zamanlamaPerformans" />
+
+            <TextView
+                android:id="@+id/durustsellik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/durustsellik_kotu"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/zamanlamaPerformansDetay" />
+
+            <TextView
+                android:id="@+id/durustsellikDetay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text="@string/durustsellik_detay_kotu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/durustsellik" />
+
+            <TextView
+                android:id="@+id/hiperAktiflik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/hiperaktif_kotu"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hiperAktifDetay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text="@string/hiperaktif_detay_kotu" />
+
+            <TextView
+                android:id="@+id/tavsiye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tavsiye_kotu"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tavsiyeDetay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text="@string/tavsiye_detay_kotu" />
+
+            <TextView
+                android:id="@+id/ogretmen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/ogretmen_not_kotu"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ogretmenDetay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text="@string/ogretmen_detay_kotu" />
+
+            <TextView
+                android:id="@+id/aile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/aileye_notlar_kotu"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aileDetay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#000000"
+                android:text="@string/ailedetay_kotu" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
